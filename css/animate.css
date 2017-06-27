@@ -1,0 +1,56 @@
+/**/
+.animated{
+    animation:1s linear;
+}
+.infinite{
+    animation-iteration-count: infinite;
+}
+/**/
+.delay1{
+    animation-delay: 1s;
+}
+.delay2{
+    animation-delay: 2s;
+}
+.delay3{
+    animation-delay: 3s;
+}
+
+.moveToDown{
+    animation-name: moveToDown;
+}
+.moveToRight{
+    animation-name: moveToRight;
+}
+.arrowUp{
+    animation-name: arrowUp;
+}
+
+
+@keyframes moveToRight {
+    0%{transform:translateX(-10rem)}
+    100%{transform:translateX(0rem)}
+}
+
+
+@keyframes moveToDown {
+
+    0%{transform:translateY(-10rem)}
+    100%{transform:translateY(0rem)}
+}
+
+
+@keyframes arrowUp{
+
+    0%{transform: translateY(0);opacity:1}
+    50%{opacity:0.3}
+    100%{transform: translateY(-0.5rem);opacity:1}
+
+}
+
+
+
+
+
+
+

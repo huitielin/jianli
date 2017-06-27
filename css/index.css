@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page,.subPage{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*5∆¡œ»÷ÿµ˛*/
+    position: absolute;
+
+    transition:transform 0.5s linear;
+}
+
+.page1{
+    background: #083846;
+}
+.page2{
+    background: #724dff;
+}
+
+.page1 .pic1{
+    width: 4rem;
+    height: 5rem;
+    display: block;
+    margin: 0.5rem auto;
+}
+.page1 .pic2{
+    width: 3.69rem;
+    height: 2.59rem;
+    display: block;
+    margin: 2rem auto 0 auto;
+}
+
+.arrow{
+    width: 0.5rem;
+    height: 0.28rem;
+    background: url("../img/icon_up.png");
+    background-size: 0.5rem 0.28rem;
+    position: fixed;
+    bottom: 0.3rem;
+    left: 50%;
+    margin-left: -0.25rem;
+    z-index: 222;
+
+}
+
+
+/*…œ∑≠“≥*/
+.pageUp{
+    transform:translateY(-100%);
+}
+/*œ¬∑≠“≥*/
+
+.pageDown{
+    transform:translateY(100%);
+}
+/*◊Û∑≠“≥*/
+.pageLeft{
+    transform: translateX(-100%);
+}
+/*”“∑≠“≥*/
+.pageRight{
+    transform: translateX(100%);
+}
